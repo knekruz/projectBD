@@ -24,7 +24,7 @@ hdfs dfs -mkdir /user/hadoop/summoner_details
 api key:
 RGAPI-09292aea-f9cb-4022-b22c-0b3c5271ba64
 
-git hub auth key:
+git hub auth key: ajouter 7
 
-git config --global credential.helper 'cache --timeout=3600'
-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
+git config --global credential.helper 'cache --timeout=36000'
+ghp_UM4icOJAZ2oTBvFdYzCFIyUNovUcwf3xVBu
