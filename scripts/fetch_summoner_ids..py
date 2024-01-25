@@ -47,7 +47,7 @@ output_file = "../summoner_details.json"
 write_results_to_file(output_file, results)
 
 # Path for uploading to HDFS (modify as needed)
-hdfs_output_path = "/user/hadoop/summoner_details"  # Update with your HDFS directory
+hdfs_output_path = "/user/hadoop/lol/raw"  # Update with your HDFS directory
 upload_to_hdfs(output_file, hdfs_output_path)
 
 # Optionally, delete the local file after uploading
