@@ -14,5 +14,12 @@ netstat -tuln | grep 9000
 check if hdfs is working:
 hdfs dfs -ls /
 
+create directory in hdfs:
+hdfs dfs -mkdir /user/hadoop
+hdfs dfs -mkdir /user/hadoop/summoner_details
+
+verify dir hdfs:
+hdfs dfs -mkdir /user/hadoop/summoner_details
+
 api key:
 RGAPI-09292aea-f9cb-4022-b22c-0b3c5271ba64
