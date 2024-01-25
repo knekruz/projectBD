@@ -1,0 +1,18 @@
+start hdfs:
+start-dfs.sh
+start-yarn.sh
+
+
+verify service:
+jps
+
+
+check port:
+netstat -tuln | grep 9000
+
+
+check if hdfs is working:
+hdfs dfs -ls /
+
+api key:
+RGAPI-09292aea-f9cb-4022-b22c-0b3c5271ba64
