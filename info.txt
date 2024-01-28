@@ -19,7 +19,7 @@ hdfs dfs -mkdir /user/hadoop
 hdfs dfs -mkdir /user/hadoop/summoner_details
 
 verify dir hdfs:
-hdfs dfs -mkdir /user/hadoop/summoner_details
+hdfs dfs -ls /user/hadoop/summoner_details
 
 api key:
 RGAPI-09292aea-f9cb-4022-b22c-0b3c5271ba64
@@ -28,3 +28,88 @@ git hub auth key: ajouter 7
 
 git config --global credential.helper 'cache --timeout=36000'
 ghp_UM4icOJAZ2oTBvFdYzCFIyUNovUcwf3xVBu
+
+
+
+
+
+airflow install:
+
+faut bien mettre le airflow home en place apres l'install avant le db init ( en permanenet avec nano du bash et le reset avec source et cahnger de terminal)
+
+pip install apache-airflow==2.8.0
+
+
+python -m site --user-base
+
+export PATH=$PATH:/home/hadoop/.local/bin
+
+echo 'export PATH=$PATH:/home/hadoop/.local/bin' >> ~/.bashrc
+
+source ~/.bashrc
+nano ~/.bashrc
+
+airflow --version
+
+export AIRFLOW_HOME=/home/hadoop/Desktop/projectBD/airflow
+
+airflow db init
+
+airflow users create \
+  --username admin \
+  --firstname Kayu \
+  --lastname Lowy \
+  --role Admin \
+  --email irachide1@gmail.com
+
+pass:123456
+
+
+airflow start:
+
+airflow webserver -p 8080
+
+airflow scheduler
+
+
+ps aux | grep '[a]irflow' | awk '{print $2}' | xargs kill -9
+airflow db reset
+sudo lsof -i :8793 | awk 'NR!=1 {print $2}' | xargs kill -9
+
+
+
+find ~ -name "*airflow*"
+rm -rf ~/airflow
+pip uninstall apache-airflow
+
+
+
+
+/home/hadoop/Desktop/projectBD/
+│
+├── data/
+│   └── summoner_names.json
+│
+├── scripts/
+│   └── fetch_summoner_ids.py
+│
+├── hadoop/
+│   └── (Hadoop configuration files or scripts)
+│
+├── airflow/
+│   └── dags
+│        └── summoner_id_dag.py   
+│
+├── spark/
+│   └── (Spark scripts)
+│
+├── logs/
+│   └── (Log files, if any)
+│
+├── docs/
+│   └── (Documentation files)
+│
+├── info.txt
+└── requirements.txt
+
+

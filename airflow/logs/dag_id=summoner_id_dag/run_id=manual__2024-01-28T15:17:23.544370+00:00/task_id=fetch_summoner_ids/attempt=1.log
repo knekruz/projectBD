@@ -1,0 +1,31 @@
+[2024-01-28T16:17:27.366+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: summoner_id_dag.fetch_summoner_ids manual__2024-01-28T15:17:23.544370+00:00 [queued]>
+[2024-01-28T16:17:27.371+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: summoner_id_dag.fetch_summoner_ids manual__2024-01-28T15:17:23.544370+00:00 [queued]>
+[2024-01-28T16:17:27.372+0100] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-01-28T16:17:27.406+0100] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): fetch_summoner_ids> on 2024-01-28 15:17:23.544370+00:00
+[2024-01-28T16:17:27.410+0100] {standard_task_runner.py:60} INFO - Started process 19146 to run task
+[2024-01-28T16:17:27.414+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'summoner_id_dag', 'fetch_summoner_ids', 'manual__2024-01-28T15:17:23.544370+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/summoner_id_dag.py', '--cfg-path', '/tmp/tmpyetvh127']
+[2024-01-28T16:17:27.416+0100] {standard_task_runner.py:88} INFO - Job 12: Subtask fetch_summoner_ids
+[2024-01-28T16:17:27.465+0100] {task_command.py:423} INFO - Running <TaskInstance: summoner_id_dag.fetch_summoner_ids manual__2024-01-28T15:17:23.544370+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-01-28T16:17:27.555+0100] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nekruzk@3il.fr' AIRFLOW_CTX_DAG_OWNER='hadoop' AIRFLOW_CTX_DAG_ID='summoner_id_dag' AIRFLOW_CTX_TASK_ID='fetch_summoner_ids' AIRFLOW_CTX_EXECUTION_DATE='2024-01-28T15:17:23.544370+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-28T15:17:23.544370+00:00'
+[2024-01-28T16:17:27.561+0100] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-01-28T16:17:27.567+0100] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/hadoop/Desktop/projectBD/scripts/fetch_summoner_ids.py ']
+[2024-01-28T16:17:27.582+0100] {subprocess.py:86} INFO - Output:
+[2024-01-28T16:17:34.477+0100] {subprocess.py:93} INFO - API call failed for Tarelcat: Status Code 403, Response {"status":{"message":"Forbidden","status_code":403}}
+[2024-01-28T16:17:34.478+0100] {subprocess.py:93} INFO - No data fetched for summoner: Tarelcat
+[2024-01-28T16:17:34.478+0100] {subprocess.py:93} INFO - API call failed for Kawozz: Status Code 403, Response {"status":{"message":"Forbidden","status_code":403}}
+[2024-01-28T16:17:34.478+0100] {subprocess.py:93} INFO - No data fetched for summoner: Kawozz
+[2024-01-28T16:17:34.478+0100] {subprocess.py:93} INFO - API call failed for Saken: Status Code 403, Response {"status":{"message":"Forbidden","status_code":403}}
+[2024-01-28T16:17:34.478+0100] {subprocess.py:93} INFO - No data fetched for summoner: Saken
+[2024-01-28T16:17:34.478+0100] {subprocess.py:93} INFO - All API calls failed. Exiting script.
+[2024-01-28T16:17:34.498+0100] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-01-28T16:17:34.506+0100] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/hadoop/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 428, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/hadoop/.local/lib/python3.10/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-01-28T16:17:34.519+0100] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=summoner_id_dag, task_id=fetch_summoner_ids, execution_date=20240128T151723, start_date=20240128T151727, end_date=20240128T151734
+[2024-01-28T16:17:34.548+0100] {standard_task_runner.py:107} ERROR - Failed to execute job 12 for task fetch_summoner_ids (Bash command failed. The command returned a non-zero exit code 1.; 19146)
+[2024-01-28T16:17:34.554+0100] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-01-28T16:17:34.563+0100] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
