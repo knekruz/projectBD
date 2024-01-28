@@ -43,7 +43,7 @@ def write_results_to_file(file_name, data):
         json.dump(data, file)
 
 # Replace with your actual API key
-api_key = "RGAPI-d3040259-9084-49bb-ad43"
+api_key = "RGAPI-d3040259-9084-49bb-ad43-b01382eb358c"
 
 # Check if HDFS is running
 if not is_hdfs_running():

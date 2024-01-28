@@ -3740,3 +3740,264 @@ File Path                                                       PID    Runtime  
 /home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.21s           2024-01-28T15:31:51
 ================================================================================
 [2024-01-28T16:31:58.063+0100] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2024-01-28T23:50:49.453+0100] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2024-01-28T23:50:49.456+0100] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-01-28T23:50:49.456+0100] {manager.py:471} INFO - Checking for new files in /home/hadoop/Desktop/projectBD/airflow/dags every 300 seconds
+[2024-01-28T23:50:49.456+0100] {manager.py:738} INFO - Searching for files in /home/hadoop/Desktop/projectBD/airflow/dags
+[2024-01-28T23:50:49.461+0100] {manager.py:741} INFO - There are 2 files in /home/hadoop/Desktop/projectBD/airflow/dags
+[2024-01-28T23:50:49.987+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           0           0
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.21s           2024-01-28T22:50:49
+================================================================================
+[2024-01-28T23:51:30.674+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.21s           2024-01-28T22:50:51
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.10s           2024-01-28T22:51:30
+================================================================================
+[2024-01-28T23:52:01.146+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.11s           2024-01-28T22:51:32
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.21s           2024-01-28T22:52:01
+================================================================================
+[2024-01-28T23:52:45.990+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.11s           2024-01-28T22:52:03
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.11s           2024-01-28T22:52:45
+================================================================================
+[2024-01-28T23:53:16.149+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.10s           2024-01-28T22:52:47
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.21s           2024-01-28T22:53:09
+================================================================================
+[2024-01-28T23:53:46.415+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.11s           2024-01-28T22:53:17
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.11s           2024-01-28T22:53:39
+================================================================================
+[2024-01-28T23:54:16.695+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.11s           2024-01-28T22:53:47
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.10s           2024-01-28T22:54:09
+================================================================================
+[2024-01-28T23:54:46.948+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.10s           2024-01-28T22:54:17
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.11s           2024-01-28T22:54:40
+================================================================================
+[2024-01-28T23:55:17.243+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.12s           2024-01-28T22:54:48
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.11s           2024-01-28T22:55:10
+================================================================================
+[2024-01-28T23:55:47.586+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.21s           2024-01-28T22:55:18
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.10s           2024-01-28T22:55:41
+================================================================================
+[2024-01-28T23:55:49.603+0100] {manager.py:738} INFO - Searching for files in /home/hadoop/Desktop/projectBD/airflow/dags
+[2024-01-28T23:55:49.605+0100] {manager.py:741} INFO - There are 2 files in /home/hadoop/Desktop/projectBD/airflow/dags
+[2024-01-28T23:56:17.648+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.21s           2024-01-28T22:55:48
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.11s           2024-01-28T22:56:11
+================================================================================
+[2024-01-28T23:56:47.723+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.10s           2024-01-28T22:56:19
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.10s           2024-01-28T22:56:41
+================================================================================
+[2024-01-28T23:57:17.792+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.11s           2024-01-28T22:56:49
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.10s           2024-01-28T22:57:12
+================================================================================
+[2024-01-28T23:57:47.849+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.21s           2024-01-28T22:57:19
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.11s           2024-01-28T22:57:42
+================================================================================
+[2024-01-28T23:58:17.905+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.21s           2024-01-28T22:57:49
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.32s           2024-01-28T22:58:12
+================================================================================
+[2024-01-28T23:58:47.982+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.10s           2024-01-28T22:58:20
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.10s           2024-01-28T22:58:44
+================================================================================
+[2024-01-28T23:59:29.984+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.10s           2024-01-28T22:58:50
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.62s           2024-01-28T22:59:29
+================================================================================
+[2024-01-29T00:00:14.365+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.21s           2024-01-28T22:59:31
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.21s           2024-01-28T23:00:14
+================================================================================
+[2024-01-29T00:00:45.422+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.11s           2024-01-28T23:00:15
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.10s           2024-01-28T23:00:45
+================================================================================
+[2024-01-29T00:00:59.684+0100] {manager.py:738} INFO - Searching for files in /home/hadoop/Desktop/projectBD/airflow/dags
+[2024-01-29T00:00:59.695+0100] {manager.py:741} INFO - There are 2 files in /home/hadoop/Desktop/projectBD/airflow/dags
+[2024-01-29T00:01:16.516+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.21s           2024-01-28T23:00:46
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.21s           2024-01-28T23:01:16
+================================================================================
+[2024-01-29T00:01:46.657+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.11s           2024-01-28T23:01:17
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.10s           2024-01-28T23:01:46
+================================================================================
+[2024-01-29T00:02:17.811+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.11s           2024-01-28T23:01:48
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.21s           2024-01-28T23:02:17
+================================================================================
+[2024-01-29T00:02:48.543+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.10s           2024-01-28T23:02:18
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.21s           2024-01-28T23:02:48
+================================================================================
+[2024-01-29T00:03:18.893+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.10s           2024-01-28T23:02:49
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.31s           2024-01-28T23:03:18
+================================================================================
+[2024-01-29T00:03:49.958+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.11s           2024-01-28T23:03:20
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.10s           2024-01-28T23:03:49
+================================================================================
+[2024-01-29T00:04:20.350+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.10s           2024-01-28T23:03:51
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.21s           2024-01-28T23:04:20
+================================================================================
+[2024-01-29T00:04:50.577+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.21s           2024-01-28T23:04:21
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.21s           2024-01-28T23:04:50
+================================================================================
+[2024-01-29T00:05:20.715+0100] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/hadoop/Desktop/projectBD/airflow/dags/summoner_id_dag.py                           1           0  0.10s           2024-01-28T23:04:51
+/home/hadoop/Desktop/projectBD/airflow/dags/match_id_dag.py                              1           0  0.10s           2024-01-28T23:05:20
+================================================================================

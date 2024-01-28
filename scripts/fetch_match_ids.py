@@ -2,16 +2,33 @@ import requests
 import json
 import subprocess
 import os
+import sys
 
-# Change current working directory to the script's directory
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+def is_hdfs_running():
+    result = subprocess.run(["hdfs", "dfsadmin", "-report"], capture_output=True)
+    if result.returncode != 0:
+        print("HDFS is not running. Exiting script.")
+        sys.exit(1)  # Exit with an error status
+    return True
+
+# Check if HDFS is running
+if not is_hdfs_running():
+    print("HDFS is not running. Exiting script.")
+    exit(1)
+
+def upload_to_hdfs(local_path, hdfs_path):
+    try:
+        subprocess.run(["hdfs", "dfs", "-put", "-f", local_path, hdfs_path], check=True)
+        print(f"Successfully uploaded {local_path} to {hdfs_path}")
+    except subprocess.CalledProcessError as e:
+        print(f"Failed to upload {local_path} to {hdfs_path}: {e}")
+        sys.exit(1)
 
 def read_puuids_from_hdfs(hdfs_file_path):
-    # Fetch the summoner details file from HDFS
     result = subprocess.run(["hdfs", "dfs", "-cat", hdfs_file_path], capture_output=True, text=True)
     if result.returncode != 0:
         print(f"Error reading file from HDFS: {result.stderr}")
-        return None
+        sys.exit(1)
     return json.loads(result.stdout)
 
 def get_ranked_match_ids(puuid, api_key, total_matches=100):
@@ -20,34 +37,40 @@ def get_ranked_match_ids(puuid, api_key, total_matches=100):
     headers = {"X-Riot-Token": api_key}
 
     response = requests.get(base_url, headers=headers, params=params)
-
     if response.status_code == 200:
         return response.json()
     else:
-        return f"Error: {response.status_code}"
+        print(f"API call failed: Status Code {response.status_code}, Response {response.text}")
+        return None
 
 def save_match_ids_to_hdfs_and_local(match_ids, summoner_name, hdfs_directory, local_directory):
-    # Save to local file in the root folder
     local_path = f"{local_directory}/{summoner_name}_match_ids.json"
     with open(local_path, 'w') as file:
         json.dump(match_ids, file, indent=4)
     
-    # Upload to HDFS
-    hdfs_path = f"{hdfs_directory}/{summoner_name}_match_ids.json"
-    subprocess.run(["hdfs", "dfs", "-put", local_path, hdfs_path])
+    upload_to_hdfs(local_path, hdfs_directory)
 
 # Main Execution
-api_key = "RGAPI-09292aea-f9cb-4022-b22c-0b3c5271ba64"
+api_key = "RGAPI-d3040259-9084-49bb-ad43-b01382eb358c"
 hdfs_summoner_details_path = "/user/hadoop/lol/raw/summoner_details.json"
 hdfs_match_ids_directory = "/user/hadoop/lol/raw/match_ids"
-local_directory = "../"  # Replace with your project root directory
+local_directory = "../"  # Adjust if needed
 
 summoner_details = read_puuids_from_hdfs(hdfs_summoner_details_path)
-if summoner_details:
-    for summoner_name, puuid in summoner_details.items():
-        match_ids = get_ranked_match_ids(puuid, api_key)
-        if isinstance(match_ids, list):
-            save_match_ids_to_hdfs_and_local(match_ids, summoner_name, hdfs_match_ids_directory, local_directory)
-            print(f"Match IDs for {summoner_name} saved locally and uploaded to HDFS.")
-        else:
-            print(f"Failed to fetch match IDs for {summoner_name}: {match_ids}")
+if not summoner_details:
+    print("No summoner details available. Exiting.")
+    sys.exit(1)
+
+successful_fetch = False
+for summoner_name, puuid in summoner_details.items():
+    match_ids = get_ranked_match_ids(puuid, api_key)
+    if match_ids:
+        save_match_ids_to_hdfs_and_local(match_ids, summoner_name, hdfs_match_ids_directory, local_directory)
+        print(f"Match IDs for {summoner_name} saved locally and uploaded to HDFS.")
+        successful_fetch = True
+    else:
+        print(f"Failed to fetch match IDs for {summoner_name}")
+
+if not successful_fetch:
+    print("Failed to fetch match IDs for all summoners. Exiting.")
+    sys.exit(1)

@@ -1,12 +1,13 @@
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.bash import BashOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 default_args = {
     'owner': 'hadoop',
     'depends_on_past': False,
     'start_date': datetime(2024, 1, 27),
-    'email': ['nekruzk@3il.fr'],
+    'email': ['irachide1@gmail.com'],
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 0,
@@ -26,4 +27,10 @@ t1 = BashOperator(
     execution_timeout=timedelta(minutes=1),  # Set a reasonable timeout
 )
 
-t1
+trigger_next_dag = TriggerDagRunOperator(
+    task_id='trigger_match_id_dag',
+    trigger_dag_id='match_id_dag',  # Replace with the actual ID of your second DAG
+    dag=dag,
+)
+
+t1 >> trigger_next_dag
