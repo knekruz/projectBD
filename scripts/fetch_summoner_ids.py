@@ -16,21 +16,15 @@ def is_hdfs_running():
     result = subprocess.run(["hdfs", "dfsadmin", "-report"], capture_output=True)
     if result.returncode != 0:
         print("HDFS is not running. Exiting script.")
-        sys.exit(1)  # Exit with error status
+        sys.exit(1)
     return True
 
 def get_summoner_details(summoner_name, api_key):
     base_url = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/"
     url = f"{base_url}{summoner_name}"
     headers = {"X-Riot-Token": api_key}
-    
     response = requests.get(url, headers=headers)
-    if response.status_code == 200 and response.json():
-        data = response.json()
-        return {summoner_name: data.get("puuid", None)}
-    else:
-        print(f"API call failed for {summoner_name}: Status Code {response.status_code}, Response {response.text}")
-        return None  # Return None for invalid responses
+    return response.json().get("puuid", None) if response.status_code == 200 else None
 
 def read_json_file(file_name):
     if os.path.exists(file_name):
@@ -40,42 +34,28 @@ def read_json_file(file_name):
 
 def write_results_to_file(file_name, data):
     with open(file_name, "w") as file:
-        json.dump(data, file)
+        json.dump(data, file, indent=4)
 
-# Replace with your actual API key
-api_key = "RGAPI-d3040259-9084-49bb-ad43-b01382eb358c"
 
-# Check if HDFS is running
-if not is_hdfs_running():
-    print("HDFS is not running. Exiting script.")
-    exit(1)
-
-# Paths for the summoner names file and the details file
+api_key = "RGAPI-847e8ec1-ff05-46fc-b51b-ce18b1e2a991"
 script_dir = os.path.dirname(os.path.abspath(__file__))
 summoner_names_file = os.path.join(script_dir, "../data/summoner_names.json")
 summoner_details_file = os.path.join(script_dir, "../output/summoner_details.json")
 
+if not is_hdfs_running():
+    exit(1)
+
 summoner_names = read_json_file(summoner_names_file)
+summoner_details = read_json_file(summoner_details_file)
 
-# Fetch summoner details
-summoner_details = {}
-successful_api_call = False
-for name in summoner_names:
-    detail = get_summoner_details(name, api_key)
-    if detail is not None:
-        summoner_details.update(detail)
-        successful_api_call = True
-    else:
-        print(f"No data fetched for summoner: {name}")
+for summoner_name, custom_name in summoner_names.items():
+    if custom_name not in summoner_details:
+        puuid = get_summoner_details(summoner_name, api_key)
+        if puuid:
+            summoner_details[custom_name] = puuid
+            print(f"Added {custom_name} with PUUID: {puuid}")
+        else:
+            print(f"Failed to fetch details for {summoner_name}")
 
-if not successful_api_call:
-    print("All API calls failed. Exiting script.")
-    sys.exit(1)  # Exit with error status if all API calls fail
-
-# Write updated details to local file and upload to HDFS
-if summoner_details:
-    write_results_to_file(summoner_details_file, summoner_details)
-    hdfs_output_path = "/user/hadoop/lol/raw"
-    upload_to_hdfs(summoner_details_file, hdfs_output_path)
-else:
-    print("No new data to update.")
+write_results_to_file(summoner_details_file, summoner_details)
+upload_to_hdfs(summoner_details_file, "/user/hadoop/lol/raw")
