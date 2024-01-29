@@ -51,10 +51,12 @@ def save_match_ids_to_hdfs_and_local(match_ids, summoner_name, hdfs_directory, l
     upload_to_hdfs(local_path, hdfs_directory)
 
 # Main Execution
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
 api_key = "RGAPI-d3040259-9084-49bb-ad43-b01382eb358c"
 hdfs_summoner_details_path = "/user/hadoop/lol/raw/summoner_details.json"
 hdfs_match_ids_directory = "/user/hadoop/lol/raw/match_ids"
-local_directory = "../"  # Adjust if needed
+local_directory = os.path.join(script_dir, "../output")  # Adjust if needed
 
 summoner_details = read_puuids_from_hdfs(hdfs_summoner_details_path)
 if not summoner_details:

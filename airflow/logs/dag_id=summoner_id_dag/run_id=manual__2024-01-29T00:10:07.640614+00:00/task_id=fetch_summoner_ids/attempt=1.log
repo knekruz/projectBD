@@ -1,0 +1,17 @@
+[2024-01-29T01:10:14.537+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: summoner_id_dag.fetch_summoner_ids manual__2024-01-29T00:10:07.640614+00:00 [queued]>
+[2024-01-29T01:10:14.542+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: summoner_id_dag.fetch_summoner_ids manual__2024-01-29T00:10:07.640614+00:00 [queued]>
+[2024-01-29T01:10:14.542+0100] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-01-29T01:10:14.619+0100] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): fetch_summoner_ids> on 2024-01-29 00:10:07.640614+00:00
+[2024-01-29T01:10:14.635+0100] {standard_task_runner.py:60} INFO - Started process 21396 to run task
+[2024-01-29T01:10:14.755+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'summoner_id_dag', 'fetch_summoner_ids', 'manual__2024-01-29T00:10:07.640614+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/summoner_id_dag.py', '--cfg-path', '/tmp/tmpgzj99r53']
+[2024-01-29T01:10:14.758+0100] {standard_task_runner.py:88} INFO - Job 53: Subtask fetch_summoner_ids
+[2024-01-29T01:10:14.825+0100] {task_command.py:423} INFO - Running <TaskInstance: summoner_id_dag.fetch_summoner_ids manual__2024-01-29T00:10:07.640614+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-01-29T01:10:15.038+0100] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='irachide1@gmail.com' AIRFLOW_CTX_DAG_OWNER='hadoop' AIRFLOW_CTX_DAG_ID='summoner_id_dag' AIRFLOW_CTX_TASK_ID='fetch_summoner_ids' AIRFLOW_CTX_EXECUTION_DATE='2024-01-29T00:10:07.640614+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-29T00:10:07.640614+00:00'
+[2024-01-29T01:10:15.063+0100] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-01-29T01:10:15.066+0100] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/hadoop/Desktop/projectBD/scripts/fetch_summoner_ids.py ']
+[2024-01-29T01:10:15.183+0100] {subprocess.py:86} INFO - Output:
+[2024-01-29T01:10:29.586+0100] {subprocess.py:93} INFO - Successfully uploaded /home/hadoop/Desktop/projectBD/scripts/../summoner_details.json to /user/hadoop/lol/raw
+[2024-01-29T01:10:29.607+0100] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-01-29T01:10:29.665+0100] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=summoner_id_dag, task_id=fetch_summoner_ids, execution_date=20240129T001007, start_date=20240129T001014, end_date=20240129T001029
+[2024-01-29T01:10:29.711+0100] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-29T01:10:29.735+0100] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

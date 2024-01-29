@@ -53,7 +53,7 @@ if not is_hdfs_running():
 # Paths for the summoner names file and the details file
 script_dir = os.path.dirname(os.path.abspath(__file__))
 summoner_names_file = os.path.join(script_dir, "../data/summoner_names.json")
-summoner_details_file = os.path.join(script_dir, "../summoner_details.json")
+summoner_details_file = os.path.join(script_dir, "../output/summoner_details.json")
 
 summoner_names = read_json_file(summoner_names_file)
 

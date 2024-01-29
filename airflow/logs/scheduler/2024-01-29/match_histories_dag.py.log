@@ -1,0 +1,392 @@
+[2024-01-29T01:00:26.679+0100] {processor.py:161} INFO - Started process (PID=18121) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:00:26.681+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:00:26.682+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:00:26.682+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:00:26.691+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:00:26.703+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:00:26.703+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:00:26.717+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:00:26.717+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:00:26.735+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.060 seconds
+[2024-01-29T01:02:24.871+0100] {processor.py:161} INFO - Started process (PID=18619) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:02:24.873+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:02:24.874+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:02:24.874+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:02:24.884+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:02:24.957+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:02:24.957+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:02:24.963+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:02:24.963+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:02:24.986+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.119 seconds
+[2024-01-29T01:03:00.082+0100] {processor.py:161} INFO - Started process (PID=18735) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:03:00.086+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:03:00.088+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:03:00.087+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:03:00.113+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:03:00.129+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:03:00.129+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:03:00.142+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:03:00.141+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:03:00.168+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.095 seconds
+[2024-01-29T01:03:34.253+0100] {processor.py:161} INFO - Started process (PID=18999) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:03:34.258+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:03:34.260+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:03:34.259+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:03:34.281+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:03:34.309+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:03:34.308+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:03:34.324+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:03:34.324+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:03:34.354+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.110 seconds
+[2024-01-29T01:05:13.147+0100] {processor.py:161} INFO - Started process (PID=20608) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:05:13.161+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:05:13.164+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:05:13.163+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:05:13.183+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:05:13.236+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:05:13.233+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:05:13.255+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:05:13.255+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:05:13.302+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.166 seconds
+[2024-01-29T01:05:44.276+0100] {processor.py:161} INFO - Started process (PID=20633) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:05:44.281+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:05:44.282+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:05:44.281+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:05:44.295+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:05:44.324+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:05:44.324+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:05:44.348+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:05:44.347+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:05:44.391+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.121 seconds
+[2024-01-29T01:06:18.205+0100] {processor.py:161} INFO - Started process (PID=20773) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:06:18.212+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:06:18.218+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:06:18.216+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:06:18.238+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:06:18.272+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:06:18.272+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:06:18.313+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:06:18.313+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:06:18.357+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.156 seconds
+[2024-01-29T01:06:51.289+0100] {processor.py:161} INFO - Started process (PID=21193) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:06:51.295+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:06:51.295+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:06:51.295+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:06:51.301+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:06:51.328+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:06:51.328+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:06:51.339+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:06:51.339+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:06:51.378+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.095 seconds
+[2024-01-29T01:07:21.442+0100] {processor.py:161} INFO - Started process (PID=21219) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:07:21.456+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:07:21.461+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:07:21.459+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:07:21.472+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:07:21.505+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:07:21.502+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:07:21.520+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:07:21.520+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:07:21.568+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.130 seconds
+[2024-01-29T01:07:52.097+0100] {processor.py:161} INFO - Started process (PID=21263) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:07:52.114+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:07:52.115+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:07:52.115+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:07:52.124+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:07:52.152+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:07:52.152+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:07:52.180+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:07:52.179+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:07:52.239+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.147 seconds
+[2024-01-29T01:08:22.705+0100] {processor.py:161} INFO - Started process (PID=21281) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:08:22.706+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:08:22.707+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:08:22.707+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:08:22.715+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:08:22.736+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:08:22.736+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:08:22.755+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:08:22.755+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:08:22.794+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.091 seconds
+[2024-01-29T01:08:53.191+0100] {processor.py:161} INFO - Started process (PID=21319) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:08:53.200+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:08:53.201+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:08:53.200+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:08:53.219+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:08:53.249+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:08:53.249+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:08:53.277+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:08:53.277+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:08:53.353+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.165 seconds
+[2024-01-29T01:09:23.564+0100] {processor.py:161} INFO - Started process (PID=21368) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:09:23.565+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:09:23.568+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:09:23.567+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:09:23.584+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:09:23.621+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:09:23.621+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:09:23.637+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:09:23.637+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:09:23.715+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.155 seconds
+[2024-01-29T01:09:53.877+0100] {processor.py:161} INFO - Started process (PID=21378) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:09:53.883+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:09:53.885+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:09:53.884+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:09:53.895+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:09:53.922+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:09:53.922+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:09:53.936+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:09:53.936+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:09:53.989+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.116 seconds
+[2024-01-29T01:10:30.678+0100] {processor.py:161} INFO - Started process (PID=21496) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:10:30.681+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:10:30.682+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:10:30.682+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:10:30.688+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:10:30.735+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:10:30.735+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:10:30.753+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:10:30.753+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:10:30.780+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.108 seconds
+[2024-01-29T01:11:03.726+0100] {processor.py:161} INFO - Started process (PID=21760) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:11:03.728+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:11:03.729+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:11:03.729+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:11:03.739+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:11:03.778+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:11:03.778+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:11:03.791+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:11:03.791+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:11:03.847+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.124 seconds
+[2024-01-29T01:12:47.412+0100] {processor.py:161} INFO - Started process (PID=23354) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:12:47.417+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:12:47.420+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:12:47.419+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:12:47.433+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:12:47.540+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:12:47.540+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:12:47.556+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:12:47.556+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:12:47.599+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.191 seconds
+[2024-01-29T01:13:18.435+0100] {processor.py:161} INFO - Started process (PID=23368) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:13:18.436+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:13:18.438+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:13:18.437+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:13:18.444+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:13:18.478+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:13:18.478+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:13:18.502+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:13:18.502+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:13:18.586+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.158 seconds
+[2024-01-29T01:13:48.937+0100] {processor.py:161} INFO - Started process (PID=23443) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:13:48.939+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:13:48.940+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:13:48.939+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:13:48.953+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:13:49.000+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:13:49.000+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:13:49.033+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:13:49.033+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:13:49.071+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.137 seconds
+[2024-01-29T01:14:19.528+0100] {processor.py:161} INFO - Started process (PID=23476) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:14:19.536+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:14:19.540+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:14:19.539+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:14:19.562+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:14:19.878+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:14:19.878+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:14:19.914+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:14:19.913+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:14:20.018+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.499 seconds
+[2024-01-29T01:14:50.654+0100] {processor.py:161} INFO - Started process (PID=23551) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:14:50.662+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:14:50.673+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:14:50.663+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:14:50.700+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:14:50.797+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:14:50.797+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:14:50.853+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:14:50.852+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:14:50.988+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.341 seconds
+[2024-01-29T01:15:21.990+0100] {processor.py:161} INFO - Started process (PID=23906) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:15:21.992+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:15:22.014+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:15:21.993+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:15:22.026+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:15:22.241+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:15:22.241+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:15:22.267+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:15:22.266+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:15:22.364+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.379 seconds
+[2024-01-29T01:15:52.617+0100] {processor.py:161} INFO - Started process (PID=23956) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:15:52.619+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:15:52.620+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:15:52.619+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:15:52.627+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:15:52.649+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:15:52.649+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:15:52.663+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:15:52.663+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:15:52.695+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.083 seconds
+[2024-01-29T01:16:23.202+0100] {processor.py:161} INFO - Started process (PID=23971) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:16:23.204+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:16:23.205+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:16:23.205+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:16:23.211+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:16:23.243+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:16:23.243+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:16:23.252+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:16:23.251+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:16:23.279+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.080 seconds
+[2024-01-29T01:16:53.836+0100] {processor.py:161} INFO - Started process (PID=24002) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:16:53.848+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:16:53.850+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:16:53.849+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:16:53.862+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:16:53.891+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:16:53.890+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:16:53.907+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:16:53.905+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:16:53.968+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.141 seconds
+[2024-01-29T01:17:24.444+0100] {processor.py:161} INFO - Started process (PID=24039) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:17:24.448+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:17:24.451+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:17:24.449+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:17:24.461+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:17:24.494+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:17:24.494+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:17:24.521+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:17:24.520+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:17:24.631+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.201 seconds
+[2024-01-29T01:17:54.879+0100] {processor.py:161} INFO - Started process (PID=24071) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:17:54.883+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:17:54.883+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:17:54.883+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:17:54.900+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:17:54.926+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:17:54.926+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:17:54.941+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:17:54.941+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:17:54.980+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.104 seconds
+[2024-01-29T01:18:25.691+0100] {processor.py:161} INFO - Started process (PID=24079) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:18:25.695+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:18:25.728+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:18:25.698+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:18:25.743+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:18:25.814+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:18:25.813+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:18:25.825+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:18:25.824+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:18:25.873+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.198 seconds
+[2024-01-29T01:18:56.115+0100] {processor.py:161} INFO - Started process (PID=24089) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:18:56.117+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:18:56.118+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:18:56.117+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:18:56.124+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:18:56.172+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:18:56.172+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:18:56.191+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:18:56.191+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:18:56.243+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.131 seconds
+[2024-01-29T01:19:26.531+0100] {processor.py:161} INFO - Started process (PID=24135) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:19:26.534+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:19:26.535+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:19:26.535+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:19:26.540+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:19:26.553+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:19:26.553+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:19:26.561+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:19:26.561+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:19:26.581+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.053 seconds
+[2024-01-29T01:19:56.808+0100] {processor.py:161} INFO - Started process (PID=24158) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:19:56.809+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:19:56.810+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:19:56.810+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:19:56.814+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:19:56.827+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:19:56.827+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:19:56.835+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:19:56.835+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:19:56.857+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.052 seconds
+[2024-01-29T01:20:27.239+0100] {processor.py:161} INFO - Started process (PID=24565) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:20:27.246+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:20:27.259+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:20:27.254+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:20:27.381+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:20:27.548+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:20:27.547+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:20:27.641+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:20:27.640+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:20:27.709+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.538 seconds
+[2024-01-29T01:20:58.531+0100] {processor.py:161} INFO - Started process (PID=24597) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:20:58.535+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:20:58.536+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:20:58.535+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:20:58.540+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:20:58.555+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:20:58.554+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:20:58.563+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:20:58.563+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:20:58.583+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.054 seconds
+[2024-01-29T01:21:28.897+0100] {processor.py:161} INFO - Started process (PID=24628) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:21:28.898+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:21:28.899+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:21:28.899+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:21:28.903+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:21:28.921+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:21:28.920+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:21:28.931+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:21:28.930+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:21:28.949+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.055 seconds
+[2024-01-29T01:21:59.524+0100] {processor.py:161} INFO - Started process (PID=24656) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:21:59.526+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:21:59.527+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:21:59.526+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:21:59.531+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:21:59.546+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:21:59.546+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:21:59.557+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:21:59.557+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:21:59.575+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.054 seconds
+[2024-01-29T01:22:29.817+0100] {processor.py:161} INFO - Started process (PID=24701) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:22:29.820+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:22:29.822+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:22:29.820+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:22:29.826+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:22:29.843+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:22:29.842+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:22:29.859+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:22:29.859+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:22:29.901+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.088 seconds
+[2024-01-29T01:23:00.101+0100] {processor.py:161} INFO - Started process (PID=24823) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:23:00.105+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:23:00.106+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:23:00.106+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:23:00.111+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:23:00.127+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:23:00.126+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:23:00.137+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:23:00.137+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:23:00.159+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.061 seconds
+[2024-01-29T01:23:30.426+0100] {processor.py:161} INFO - Started process (PID=24853) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:23:30.427+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:23:30.428+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:23:30.428+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:23:30.433+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:23:30.451+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:23:30.451+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:23:30.460+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:23:30.460+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:23:30.480+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.057 seconds
+[2024-01-29T01:24:00.862+0100] {processor.py:161} INFO - Started process (PID=24901) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:24:00.863+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:24:00.864+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:24:00.863+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:24:00.871+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:24:00.887+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:24:00.887+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:24:00.895+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:24:00.895+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:24:00.919+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.062 seconds
+[2024-01-29T01:24:23.388+0100] {processor.py:161} INFO - Started process (PID=24925) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:24:23.391+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:24:23.397+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:24:23.396+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:24:23.412+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:24:23.456+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:24:23.456+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:24:23.469+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:24:23.469+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:24:23.510+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.126 seconds
+[2024-01-29T01:25:00.237+0100] {processor.py:161} INFO - Started process (PID=25055) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:25:00.240+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:25:00.250+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:25:00.242+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:25:00.275+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:25:00.319+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:25:00.319+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:25:00.341+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:25:00.341+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:25:00.370+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.141 seconds
+[2024-01-29T01:26:27.227+0100] {processor.py:161} INFO - Started process (PID=26907) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:26:27.228+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:26:27.233+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:26:27.230+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:26:27.263+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:26:27.366+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:26:27.366+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:26:27.382+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:26:27.382+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:26:27.400+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.176 seconds
+[2024-01-29T01:26:57.773+0100] {processor.py:161} INFO - Started process (PID=26926) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:26:57.778+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:26:57.779+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:26:57.778+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:26:57.783+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:26:57.807+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:26:57.807+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:26:57.817+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:26:57.817+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:26:57.843+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.073 seconds
+[2024-01-29T01:27:28.021+0100] {processor.py:161} INFO - Started process (PID=26951) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:27:28.024+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:27:28.026+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:27:28.026+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:27:28.031+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:27:28.045+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:27:28.045+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:27:28.057+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:27:28.057+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:27:28.083+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.064 seconds
+[2024-01-29T01:27:58.357+0100] {processor.py:161} INFO - Started process (PID=27000) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:27:58.358+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:27:58.359+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:27:58.359+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:27:58.368+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:27:58.388+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:27:58.388+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:27:58.400+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:27:58.399+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:27:58.441+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.087 seconds
+[2024-01-29T01:28:28.643+0100] {processor.py:161} INFO - Started process (PID=27028) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:28:28.644+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:28:28.647+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:28:28.646+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:28:28.654+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:28:28.670+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:28:28.670+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:28:28.681+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:28:28.680+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:28:28.712+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.072 seconds
+[2024-01-29T01:29:00.743+0100] {processor.py:161} INFO - Started process (PID=27152) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:29:00.745+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:29:00.746+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:29:00.745+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:29:00.758+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:29:00.805+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:29:00.805+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:29:00.820+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:29:00.820+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:29:00.863+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.126 seconds
+[2024-01-29T01:47:55.715+0100] {processor.py:161} INFO - Started process (PID=55601) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:47:55.718+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:47:55.735+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:47:55.721+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:47:55.798+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:47:56.037+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:47:56.037+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:47:56.080+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:47:56.080+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:47:56.144+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.434 seconds
+[2024-01-29T01:48:26.753+0100] {processor.py:161} INFO - Started process (PID=55608) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:48:26.756+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:48:26.757+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:48:26.756+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:48:26.761+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:48:26.777+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:48:26.777+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:48:26.784+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:48:26.784+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:48:26.802+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.052 seconds
+[2024-01-29T01:48:57.123+0100] {processor.py:161} INFO - Started process (PID=55618) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:48:57.126+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:48:57.133+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:48:57.126+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:48:57.145+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:48:57.165+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:48:57.165+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:48:57.180+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:48:57.180+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:48:57.221+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.105 seconds
+[2024-01-29T01:49:27.588+0100] {processor.py:161} INFO - Started process (PID=55674) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:49:27.593+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:49:27.606+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:49:27.605+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:49:27.691+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:49:27.816+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:49:27.815+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:49:27.924+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:49:27.924+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:49:28.086+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.501 seconds
+[2024-01-29T01:49:59.164+0100] {processor.py:161} INFO - Started process (PID=55694) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:49:59.176+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:49:59.177+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:49:59.176+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:49:59.188+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:49:59.224+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:49:59.224+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:49:59.245+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:49:59.245+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:49:59.275+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.114 seconds
+[2024-01-29T01:50:29.960+0100] {processor.py:161} INFO - Started process (PID=55775) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:50:29.969+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:50:29.980+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:50:29.972+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:50:30.021+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:50:30.123+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:50:30.122+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:50:30.199+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:50:30.199+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:50:30.291+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.332 seconds
+[2024-01-29T01:51:00.493+0100] {processor.py:161} INFO - Started process (PID=55855) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:51:00.496+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:51:00.498+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:51:00.497+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:51:00.507+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:51:00.541+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:51:00.540+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:51:00.564+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:51:00.564+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:51:00.637+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.150 seconds
+[2024-01-29T01:51:30.784+0100] {processor.py:161} INFO - Started process (PID=55889) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:51:30.785+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:51:30.786+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:51:30.786+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:51:30.792+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:51:30.808+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:51:30.808+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:51:30.816+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:51:30.816+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:51:30.838+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.057 seconds
+[2024-01-29T01:52:01.225+0100] {processor.py:161} INFO - Started process (PID=55921) to work on /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:52:01.226+0100] {processor.py:830} INFO - Processing file /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py for tasks to queue
+[2024-01-29T01:52:01.227+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:52:01.227+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:52:01.232+0100] {processor.py:840} INFO - DAG(s) 'match_histories_dag' retrieved from /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py
+[2024-01-29T01:52:01.259+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:52:01.258+0100] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-29T01:52:01.275+0100] {logging_mixin.py:188} INFO - [2024-01-29T01:52:01.274+0100] {dag.py:3820} INFO - Setting next_dagrun for match_histories_dag to None, run_after=None
+[2024-01-29T01:52:01.502+0100] {processor.py:183} INFO - Processing /home/hadoop/Desktop/projectBD/airflow/dags/match_histories_dag.py took 0.280 seconds

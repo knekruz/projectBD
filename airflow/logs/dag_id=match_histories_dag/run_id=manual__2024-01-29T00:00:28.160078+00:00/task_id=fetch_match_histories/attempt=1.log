@@ -1,0 +1,32 @@
+[2024-01-29T01:00:31.728+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_histories_dag.fetch_match_histories manual__2024-01-29T00:00:28.160078+00:00 [queued]>
+[2024-01-29T01:00:31.737+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_histories_dag.fetch_match_histories manual__2024-01-29T00:00:28.160078+00:00 [queued]>
+[2024-01-29T01:00:31.737+0100] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-01-29T01:00:31.769+0100] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): fetch_match_histories> on 2024-01-29 00:00:28.160078+00:00
+[2024-01-29T01:00:31.780+0100] {standard_task_runner.py:60} INFO - Started process 18125 to run task
+[2024-01-29T01:00:31.784+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'match_histories_dag', 'fetch_match_histories', 'manual__2024-01-29T00:00:28.160078+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/match_histories_dag.py', '--cfg-path', '/tmp/tmp8zhwzkir']
+[2024-01-29T01:00:31.787+0100] {standard_task_runner.py:88} INFO - Job 40: Subtask fetch_match_histories
+[2024-01-29T01:00:31.847+0100] {task_command.py:423} INFO - Running <TaskInstance: match_histories_dag.fetch_match_histories manual__2024-01-29T00:00:28.160078+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-01-29T01:00:31.928+0100] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='irachide1@gmail.com' AIRFLOW_CTX_DAG_OWNER='hadoop' AIRFLOW_CTX_DAG_ID='match_histories_dag' AIRFLOW_CTX_TASK_ID='fetch_match_histories' AIRFLOW_CTX_EXECUTION_DATE='2024-01-29T00:00:28.160078+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-29T00:00:28.160078+00:00'
+[2024-01-29T01:00:31.928+0100] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-01-29T01:00:31.929+0100] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/hadoop/Desktop/projectBD/scripts/fetch_match_histories.py ']
+[2024-01-29T01:00:31.941+0100] {subprocess.py:86} INFO - Output:
+[2024-01-29T01:01:01.723+0100] {process_utils.py:131} INFO - Sending Signals.SIGTERM to group 18125. PIDs of all processes in the group: [18126, 18540, 18125]
+[2024-01-29T01:01:01.723+0100] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 18125
+[2024-01-29T01:01:01.724+0100] {taskinstance.py:2451} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-01-29T01:01:01.724+0100] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2024-01-29T01:01:01.733+0100] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/hadoop/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/hadoop/.local/lib/python3.10/site-packages/airflow/operators/bash.py", line 203, in execute
+    result = self.subprocess_hook.run_command(
+  File "/home/hadoop/.local/lib/python3.10/site-packages/airflow/hooks/subprocess.py", line 91, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+  File "/home/hadoop/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2453, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-01-29T01:01:01.751+0100] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=match_histories_dag, task_id=fetch_match_histories, execution_date=20240129T000028, start_date=20240129T000031, end_date=20240129T000101
+[2024-01-29T01:01:01.795+0100] {standard_task_runner.py:107} ERROR - Failed to execute job 40 for task fetch_match_histories (Task received SIGTERM signal; 18125)
+[2024-01-29T01:01:01.824+0100] {process_utils.py:79} INFO - Process psutil.Process(pid=18125, status='terminated', exitcode=1, started='01:00:31') (18125) terminated with exit code 1
+[2024-01-29T01:01:01.825+0100] {process_utils.py:79} INFO - Process psutil.Process(pid=18540, status='terminated', started='01:01:00') (18540) terminated with exit code None
+[2024-01-29T01:01:01.825+0100] {process_utils.py:79} INFO - Process psutil.Process(pid=18126, status='terminated', started='01:00:31') (18126) terminated with exit code None

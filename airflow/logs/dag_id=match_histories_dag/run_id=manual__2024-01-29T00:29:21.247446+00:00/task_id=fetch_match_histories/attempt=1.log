@@ -1,0 +1,521 @@
+[2024-01-29T01:29:23.670+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_histories_dag.fetch_match_histories manual__2024-01-29T00:29:21.247446+00:00 [queued]>
+[2024-01-29T01:29:23.673+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_histories_dag.fetch_match_histories manual__2024-01-29T00:29:21.247446+00:00 [queued]>
+[2024-01-29T01:29:23.673+0100] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-01-29T01:29:23.688+0100] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): fetch_match_histories> on 2024-01-29 00:29:21.247446+00:00
+[2024-01-29T01:29:23.691+0100] {standard_task_runner.py:60} INFO - Started process 27420 to run task
+[2024-01-29T01:29:23.693+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'match_histories_dag', 'fetch_match_histories', 'manual__2024-01-29T00:29:21.247446+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/match_histories_dag.py', '--cfg-path', '/tmp/tmp5svel8c9']
+[2024-01-29T01:29:23.697+0100] {standard_task_runner.py:88} INFO - Job 67: Subtask fetch_match_histories
+[2024-01-29T01:29:23.727+0100] {task_command.py:423} INFO - Running <TaskInstance: match_histories_dag.fetch_match_histories manual__2024-01-29T00:29:21.247446+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-01-29T01:29:23.774+0100] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='irachide1@gmail.com' AIRFLOW_CTX_DAG_OWNER='hadoop' AIRFLOW_CTX_DAG_ID='match_histories_dag' AIRFLOW_CTX_TASK_ID='fetch_match_histories' AIRFLOW_CTX_EXECUTION_DATE='2024-01-29T00:29:21.247446+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-29T00:29:21.247446+00:00'
+[2024-01-29T01:29:23.775+0100] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-01-29T01:29:23.775+0100] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/hadoop/Desktop/projectBD/scripts/fetch_match_histories.py ']
+[2024-01-29T01:29:23.785+0100] {subprocess.py:86} INFO - Output:
+[2024-01-29T01:33:36.326+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6582663425.json': File exists
+[2024-01-29T01:33:36.326+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.326+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6582606609.json': File exists
+[2024-01-29T01:33:36.326+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.326+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6581795566.json': File exists
+[2024-01-29T01:33:36.326+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6581740231.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6580143125.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6580131883.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6580078949.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6578949604.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6578864333.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6578704648.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6577616408.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6577572892.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6577460665.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6577303701.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6577277330.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6577125519.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6577062970.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6571235786.json': File exists
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.327+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6571148904.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6571096445.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6570079832.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6569964279.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6569855219.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6569762955.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6569610276.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6569462180.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6569414736.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6569360769.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6569304511.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6569049672.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6569001413.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6568121800.json': File exists
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.328+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6567909952.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6567866185.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6567775466.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6567723065.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6567675323.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6567640115.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6567615097.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6567573333.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6567568737.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6566778713.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6566057493.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6565988685.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6564784908.json': File exists
+[2024-01-29T01:33:36.329+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6564659471.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6564578708.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6563456138.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6563374512.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6563310802.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6563262530.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6563049488.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6561778686.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6561685135.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6560616866.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6560454955.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6560321910.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6560206255.json': File exists
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.330+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6560131970.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6560008086.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6559882738.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6559788256.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6559710772.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6559552620.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6558308729.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557918828.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557898516.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557862725.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557798694.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557747044.json': File exists
+[2024-01-29T01:33:36.331+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.006+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557705678.json': File exists
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557621864.json': File exists
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557381763.json': File exists
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557298029.json': File exists
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557202957.json': File exists
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557082320.json': File exists
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.009+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6557002881.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6556762100.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6556722648.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6556672424.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6539307759.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6539280929.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6513720746.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6513707317.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6510332656.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6510281232.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6340425961.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6340368156.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6330303316.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6324128820.json': File exists
+[2024-01-29T01:39:11.010+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6324029408.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6322860223.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6322772903.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6322705968.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6322518193.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6322441740.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6322347869.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6321612626.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6321582959.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Kawozz/EUW1_6321527314.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Saken/EUW1_6739785061.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Saken/EUW1_6738385382.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Saken/EUW1_6738349537.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Saken/EUW1_6738285599.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Saken/EUW1_6732783419.json': File exists
+[2024-01-29T01:39:11.011+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6732753839, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6732724088, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6723961586, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6720689034, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6719231843, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6704540258, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6704478265, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6701286155, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6701226086, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6701169427, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6698082719, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6698058575, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6697812850, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6697742363, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6695357584, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6695276553, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6695102595, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6693836979, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6693795556, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6693714630, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6693573893, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6690629058, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6690553399, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6689069007, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6687642642, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6687566688, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6683494004, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6633879245, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6633804817, saved successfully.
+[2024-01-29T01:39:11.012+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6633727547, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6631456086, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6631394183, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6624691097, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6611690538, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6577356068, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6552248565, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6552237668, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6517745955, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6504677908, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6503440776, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6503353296, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6502936525, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6502470893, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6502072663, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6500851607, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6500221024, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6500101119, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6500057334, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6500012745, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6499835356, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6499795961, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6499158436, saved successfully.
+[2024-01-29T01:39:11.013+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6498812757, saved successfully.
+[2024-01-29T01:39:11.014+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6496465322, saved successfully.
+[2024-01-29T01:39:11.014+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6495467145, saved successfully.
+[2024-01-29T01:39:11.014+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6455501798, saved successfully.
+[2024-01-29T01:39:11.014+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6413788466, saved successfully.
+[2024-01-29T01:44:44.981+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6410051296, saved successfully.
+[2024-01-29T01:44:44.986+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6410000842, saved successfully.
+[2024-01-29T01:44:44.986+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6409650595, saved successfully.
+[2024-01-29T01:44:44.986+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6409535970, saved successfully.
+[2024-01-29T01:44:44.986+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6409425039, saved successfully.
+[2024-01-29T01:44:44.986+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6408791992, saved successfully.
+[2024-01-29T01:44:44.986+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6393561423, saved successfully.
+[2024-01-29T01:44:44.986+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6393519576, saved successfully.
+[2024-01-29T01:44:44.986+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6391371273, saved successfully.
+[2024-01-29T01:44:44.986+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6391309738, saved successfully.
+[2024-01-29T01:44:44.986+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6391228023, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6391147227, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6389997241, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6389807771, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6389770708, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6389508163, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6388913164, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6388874806, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6388822153, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6388755192, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386968763, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386843237, saved successfully.
+[2024-01-29T01:44:44.987+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386797021, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386736213, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386700623, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386640464, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386609838, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386582938, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386551388, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386513161, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386494333, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386472658, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6386447060, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6385875144, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6385732595, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6385623086, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6385300345, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Match history for Saken, Match ID: EUW1_6385267179, saved successfully.
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6739442502.json': File exists
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6739410670.json': File exists
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6708297963.json': File exists
+[2024-01-29T01:44:44.988+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6708267139.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6708242857.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6690480948.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6690405544.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6689123461.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6689040129.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6684264842.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6684209946.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6684152378.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6510332656.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6510281232.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6340425961.json': File exists
+[2024-01-29T01:44:44.989+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6340368156.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6332238798.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6332231495.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6331483743.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6330630688.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6330618738.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6330559819.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6329362027.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6328979214.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6328939190.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6328892714.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6328836109.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6328769938.json': File exists
+[2024-01-29T01:44:44.990+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6328697083.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6328636576.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6328021384.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6327946848.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6327877529.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6327805738.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6327762507.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6327718642.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6327619387.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6327588300.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6327476085.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6327257864.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6327187135.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6327116709.json': File exists
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.991+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6326991086.json': File exists
+[2024-01-29T01:44:44.992+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.992+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6326597394.json': File exists
+[2024-01-29T01:44:44.992+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.992+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6326533532.json': File exists
+[2024-01-29T01:44:44.992+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:44:44.992+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6326504699.json': File exists
+[2024-01-29T01:44:44.992+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.059+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6326447781.json': File exists
+[2024-01-29T01:47:53.060+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.060+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6326366906.json': File exists
+[2024-01-29T01:47:53.060+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.060+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6325831422.json': File exists
+[2024-01-29T01:47:53.060+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.060+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6325818638.json': File exists
+[2024-01-29T01:47:53.060+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.060+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6325784462.json': File exists
+[2024-01-29T01:47:53.060+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.060+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6325731514.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6324128820.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6324029408.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6322860223.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6322772903.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6322705968.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6322518193.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6322441740.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6322347869.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6321612626.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6321582959.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6321527314.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6321457847.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6321404593.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6321284855.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6321205684.json': File exists
+[2024-01-29T01:47:53.061+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6321124262.json': File exists
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6321069650.json': File exists
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6321016270.json': File exists
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6320911551.json': File exists
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6320841890.json': File exists
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6320779961.json': File exists
+[2024-01-29T01:47:53.062+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6320717995.json': File exists
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6320614910.json': File exists
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6320549145.json': File exists
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6319606798.json': File exists
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6319548999.json': File exists
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6319489667.json': File exists
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6319432856.json': File exists
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6319341524.json': File exists
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6318158334.json': File exists
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6317097716.json': File exists
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.063+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6316930284.json': File exists
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6316136125.json': File exists
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6316055232.json': File exists
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6316000972.json': File exists
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6315935485.json': File exists
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6315829162.json': File exists
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6314466359.json': File exists
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6314404259.json': File exists
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6314348280.json': File exists
+[2024-01-29T01:47:53.064+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6311767963.json': File exists
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6311701473.json': File exists
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6311627325.json': File exists
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6311532627.json': File exists
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6311386854.json': File exists
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6311223648.json': File exists
+[2024-01-29T01:47:53.065+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.066+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6311174747.json': File exists
+[2024-01-29T01:47:53.066+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.066+0100] {subprocess.py:93} INFO - Error uploading file to HDFS: put: `/user/hadoop/lol/raw/match_histories/Tarelcat/EUW1_6311112825.json': File exists
+[2024-01-29T01:47:53.066+0100] {subprocess.py:93} INFO - 
+[2024-01-29T01:47:53.086+0100] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-01-29T01:47:53.112+0100] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=match_histories_dag, task_id=fetch_match_histories, execution_date=20240129T002921, start_date=20240129T002923, end_date=20240129T004753
+[2024-01-29T01:47:53.166+0100] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-29T01:47:53.178+0100] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

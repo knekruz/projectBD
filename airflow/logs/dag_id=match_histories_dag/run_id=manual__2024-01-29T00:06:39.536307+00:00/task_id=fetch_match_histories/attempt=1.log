@@ -1,0 +1,25 @@
+[2024-01-29T01:06:41.702+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: match_histories_dag.fetch_match_histories manual__2024-01-29T00:06:39.536307+00:00 [queued]>
+[2024-01-29T01:06:41.708+0100] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: match_histories_dag.fetch_match_histories manual__2024-01-29T00:06:39.536307+00:00 [queued]>
+[2024-01-29T01:06:41.709+0100] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-01-29T01:06:41.754+0100] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): fetch_match_histories> on 2024-01-29 00:06:39.536307+00:00
+[2024-01-29T01:06:41.772+0100] {standard_task_runner.py:60} INFO - Started process 21048 to run task
+[2024-01-29T01:06:41.777+0100] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'match_histories_dag', 'fetch_match_histories', 'manual__2024-01-29T00:06:39.536307+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/match_histories_dag.py', '--cfg-path', '/tmp/tmpkl4zfobu']
+[2024-01-29T01:06:41.790+0100] {standard_task_runner.py:88} INFO - Job 52: Subtask fetch_match_histories
+[2024-01-29T01:06:41.872+0100] {task_command.py:423} INFO - Running <TaskInstance: match_histories_dag.fetch_match_histories manual__2024-01-29T00:06:39.536307+00:00 [running]> on host ubuntu.ubuntu.virtualbox.org
+[2024-01-29T01:06:42.007+0100] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='irachide1@gmail.com' AIRFLOW_CTX_DAG_OWNER='hadoop' AIRFLOW_CTX_DAG_ID='match_histories_dag' AIRFLOW_CTX_TASK_ID='fetch_match_histories' AIRFLOW_CTX_EXECUTION_DATE='2024-01-29T00:06:39.536307+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-29T00:06:39.536307+00:00'
+[2024-01-29T01:06:42.008+0100] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-01-29T01:06:42.010+0100] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/hadoop/Desktop/projectBD/scripts/fetch_match_histories.py ']
+[2024-01-29T01:06:42.026+0100] {subprocess.py:86} INFO - Output:
+[2024-01-29T01:06:50.312+0100] {subprocess.py:93} INFO - API call failed for Match ID EUW1_6582663425: Status Code 403, Response {"status":{"message":"Forbidden","status_code":403}}
+[2024-01-29T01:06:50.342+0100] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-01-29T01:06:50.347+0100] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/hadoop/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/hadoop/.local/lib/python3.10/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-01-29T01:06:50.359+0100] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=match_histories_dag, task_id=fetch_match_histories, execution_date=20240129T000639, start_date=20240129T000641, end_date=20240129T000650
+[2024-01-29T01:06:50.390+0100] {standard_task_runner.py:107} ERROR - Failed to execute job 52 for task fetch_match_histories (Bash command failed. The command returned a non-zero exit code 1.; 21048)
+[2024-01-29T01:06:50.440+0100] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-01-29T01:06:50.453+0100] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
