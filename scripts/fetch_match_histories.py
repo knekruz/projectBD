@@ -15,9 +15,6 @@ def is_hdfs_running():
         sys.exit(1)
     return True
 
-if not is_hdfs_running():
-    sys.exit(1)
-
 def fetch_match_details(match_id, api_key, region="europe"):
     base_url = f"https://{region}.api.riotgames.com/lol/match/v5/matches/{match_id}"
     headers = {"X-Riot-Token": api_key}
@@ -25,11 +22,13 @@ def fetch_match_details(match_id, api_key, region="europe"):
     
     if response.status_code == 200 and response.json():
         return response.json()
-    elif response.status_code == 429:  # Rate limit exceeded
+    elif response.status_code == 429:
+        print("Rate limit exceeded, waiting before next request...")
+        time.sleep(30)
         return "rate_limit_exceeded"
     else:
         print(f"API call failed for Match ID {match_id}: Status Code {response.status_code}, Response {response.text}")
-        sys.exit(1)
+        return "error"
 
 def list_files_in_hdfs_directory(hdfs_directory):
     result = subprocess.run(["hdfs", "dfs", "-ls", hdfs_directory], capture_output=True, text=True)
@@ -47,44 +46,61 @@ def read_match_ids_from_hdfs(hdfs_file_path):
         return None
     return json.loads(result.stdout)
 
-def save_match_history_to_hdfs_and_local(match_history, summoner_name, match_id, hdfs_directory, local_directory):
-    local_path = f"{local_directory}/{summoner_name}_{match_id}.json"
+def match_history_exists(hdfs_path):
+    check_result = subprocess.run(["hdfs", "dfs", "-test", "-e", hdfs_path], capture_output=True)
+    return check_result.returncode == 0
+
+def save_match_history_to_hdfs(match_history, hdfs_path):
+    local_path = f"/tmp/{os.path.basename(hdfs_path)}"
     with open(local_path, 'w') as file:
         json.dump(match_history, file, indent=4)
-
-    hdfs_path = f"{hdfs_directory}/{summoner_name}/{match_id}.json"
+    
     subprocess.run(["hdfs", "dfs", "-mkdir", "-p", os.path.dirname(hdfs_path)])
-    upload_result = subprocess.run(["hdfs", "dfs", "-put", local_path, hdfs_path], capture_output=True, text=True)
+    upload_result = subprocess.run(["hdfs", "dfs", "-put", "-f", local_path, hdfs_path], capture_output=True, text=True)
+
     if upload_result.returncode != 0:
         print(f"Error uploading file to HDFS: {upload_result.stderr}")
     else:
-        print(f"Match history for {summoner_name}, Match ID: {match_id}, saved successfully.")
+        print(f"Match history saved to HDFS: {hdfs_path}")
 
-# Main Execution
-api_key = "RGAPI-d3040259-9084-49bb-ad43-b01382eb358c"
+if not is_hdfs_running():
+    sys.exit(1)
+
+api_key = "RGAPI-847e8ec1-ff05-46fc-b51b-ce18b1e2a991"
 hdfs_match_ids_directory = "/user/hadoop/lol/raw/match_ids"
 hdfs_match_histories_directory = "/user/hadoop/lol/raw/match_histories"
-local_directory = os.path.join(script_dir, "../output/history") 
 
 match_id_files = list_files_in_hdfs_directory(hdfs_match_ids_directory)
-matches_per_summoner = 100  # Number of matches to fetch per summoner
+matches_per_summoner = 100
 
 for file_path in match_id_files:
     summoner_name = os.path.basename(file_path).split('_')[0]
     match_ids = read_match_ids_from_hdfs(file_path)
-    if match_ids:
-        match_count = 0
-        for match_id in match_ids:
-            if match_count >= matches_per_summoner:
-                break
-            match_history = fetch_match_details(match_id, api_key)
-            if match_history == "rate_limit_exceeded":
-                print("Rate limit exceeded, waiting before next request...")
-                time.sleep(30)  # Wait for a second before retrying
-                continue
-            elif match_history == "error":
-                print(f"Error fetching match history for ID {match_id}. Exiting.")
-                sys.exit(1)
-            elif isinstance(match_history, dict):
-                save_match_history_to_hdfs_and_local(match_history, summoner_name, match_id, hdfs_match_histories_directory, local_directory)
-                match_count += 1
+    if not match_ids:
+        print(f"No new matches to fetch for {summoner_name}")
+        continue
+
+    fetched_count, existing_count = 0, 0
+    for match_id in match_ids:
+        hdfs_match_path = f"{hdfs_match_histories_directory}/{summoner_name}/{match_id}.json"
+
+        if match_history_exists(hdfs_match_path):
+            print(f"Match ID {match_id} already exists for {summoner_name}")
+            existing_count += 1
+            continue
+
+        if fetched_count >= matches_per_summoner:
+            break
+
+        match_history = fetch_match_details(match_id, api_key)
+        if match_history == "rate_limit_exceeded":
+            continue
+        elif match_history == "error":
+            continue
+        elif isinstance(match_history, dict):
+            save_match_history_to_hdfs(match_history, hdfs_match_path)
+            fetched_count += 1
+
+    print(f"For {summoner_name}, Total matches fetched: {fetched_count}, Total existing matches: {existing_count}")
+
+print("Script execution completed.")

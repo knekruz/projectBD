@@ -19,7 +19,7 @@ hdfs dfs -mkdir /user/hadoop
 hdfs dfs -mkdir /user/hadoop/summoner_details
 
 verify dir hdfs:
-hdfs dfs -ls /user/hadoop/summoner_details
+hdfs dfs -ls /user/hadoop/lol/raw
 
 api key:
 RGAPI-09292aea-f9cb-4022-b22c-0b3c5271ba64
@@ -112,8 +112,3 @@ pip uninstall apache-airflow
 ├── info.txt
 └── requirements.txt
 
-
-Bo
-Upset
-Targamas
-Cabochard

@@ -3,6 +3,7 @@ import json
 import subprocess
 import os
 import sys
+import datetime
 
 def read_json_from_hdfs(hdfs_file_path):
     try:
@@ -10,6 +11,7 @@ def read_json_from_hdfs(hdfs_file_path):
         return json.loads(result.stdout) if result.returncode == 0 else []
     except json.JSONDecodeError:
         return []
+
 
 def is_hdfs_running():
     result = subprocess.run(["hdfs", "dfsadmin", "-report"], capture_output=True)
@@ -27,9 +29,16 @@ def upload_to_hdfs(local_path, hdfs_path):
         print(f"Failed to upload {local_path} to {hdfs_path}: {e}")
         sys.exit(1)
 
-def get_ranked_match_ids(puuid, api_key, total_matches=100):
+def get_start_of_day_epoch():
+    now = datetime.datetime.now()
+    start_of_day = datetime.datetime(now.year, now.month, now.day)
+    return int(start_of_day.timestamp())
+
+def get_ranked_match_ids(puuid, api_key, start_time, end_time=None, total_matches=100):
     base_url = f"https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids"
-    params = {"type": "ranked", "count": total_matches}
+    params = {"type": "ranked", "count": total_matches, "startTime": start_time}
+    if end_time:
+        params["endTime"] = end_time
     headers = {"X-Riot-Token": api_key}
     response = requests.get(base_url, headers=headers, params=params)
     if response.status_code == 200:
@@ -37,13 +46,6 @@ def get_ranked_match_ids(puuid, api_key, total_matches=100):
     else:
         print(f"API call failed: Status Code {response.status_code}, Response {response.text}")
         return None
-
-def update_match_ids(local_path, hdfs_path, new_match_ids, existing_ids):
-    updated_ids = list(set(existing_ids).union(set(new_match_ids)))
-    with open(local_path, 'w') as file:
-        json.dump(updated_ids, file, indent=4)
-    upload_to_hdfs(local_path, hdfs_path)
-    return updated_ids
 
 # Main Execution
 if not is_hdfs_running():
@@ -55,24 +57,24 @@ hdfs_summoner_details_path = "/user/hadoop/lol/raw/summoner_details.json"
 hdfs_match_ids_directory = "/user/hadoop/lol/raw/match_ids"
 local_directory = os.path.join(script_dir, "../output")
 
+start_time = get_start_of_day_epoch()
+# Optional end_time can be set here if needed
+end_time = None
+
 summoner_details = read_json_from_hdfs(hdfs_summoner_details_path)
 if not summoner_details:
     print("No summoner details available. Exiting.")
     sys.exit(1)
 
 for summoner_name, puuid in summoner_details.items():
-    new_match_ids = get_ranked_match_ids(puuid, api_key)
+    new_match_ids = get_ranked_match_ids(puuid, api_key, start_time, end_time)
     if new_match_ids is not None:
         local_path = f"{local_directory}/{summoner_name}_match_ids.json"
         hdfs_path = f"{hdfs_match_ids_directory}/{summoner_name}_match_ids.json"
-        existing_ids = set(read_json_from_hdfs(hdfs_path))
-        updated_ids = update_match_ids(local_path, hdfs_path, new_match_ids, existing_ids)
-
-        if updated_ids:
-            print(f"Updated Match IDs for {summoner_name} saved locally and uploaded to HDFS.")
-        else:
-            print(f"No new match IDs to update for {summoner_name}.")
-    else:
-        print(f"Failed to fetch match IDs for {summoner_name}")
+        with open(local_path, 'w') as file:
+            json.dump(new_match_ids, file, indent=4)
+        upload_to_hdfs(local_path, hdfs_path)
+        print(f"Updated Match IDs for {summoner_name} saved and uploaded to HDFS.")
 
 print("Script execution completed.")
+
