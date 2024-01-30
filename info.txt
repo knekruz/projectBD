@@ -7,6 +7,10 @@ verify service:
 jps
 
 
+pyspark versio:
+pip install pyspark==3.3.4
+
+
 check port:
 netstat -tuln | grep 9000
 
@@ -52,6 +56,12 @@ nano ~/.bashrc
 airflow --version
 
 export AIRFLOW_HOME=/home/hadoop/Desktop/projectBD/airflow
+export AIRFLOW_HOME=/home/hadoop/Desktop/projectBD/airflow
+
+export PYTHONPATH=$PYTHONPATH:/home/hadoop/.local/lib/python3.10/site-packages/pyspark
+
+
+
 
 airflow db init
 

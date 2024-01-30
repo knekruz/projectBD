@@ -5,6 +5,7 @@ import os
 import sys
 import datetime
 
+# Function to read JSON from HDFS
 def read_json_from_hdfs(hdfs_file_path):
     try:
         result = subprocess.run(["hdfs", "dfs", "-cat", hdfs_file_path], capture_output=True, text=True)
@@ -12,7 +13,7 @@ def read_json_from_hdfs(hdfs_file_path):
     except json.JSONDecodeError:
         return []
 
-
+# Function to check if HDFS is running
 def is_hdfs_running():
     result = subprocess.run(["hdfs", "dfsadmin", "-report"], capture_output=True)
     if result.returncode != 0:
@@ -20,6 +21,7 @@ def is_hdfs_running():
         sys.exit(1)
     return True
 
+# Function to upload files to HDFS
 def upload_to_hdfs(local_path, hdfs_path):
     try:
         subprocess.run(["hdfs", "dfs", "-mkdir", "-p", os.path.dirname(hdfs_path)], check=True)
@@ -29,11 +31,13 @@ def upload_to_hdfs(local_path, hdfs_path):
         print(f"Failed to upload {local_path} to {hdfs_path}: {e}")
         sys.exit(1)
 
-def get_start_of_day_epoch():
-    now = datetime.datetime.now()
+# Modified function to get the start of day epoch based on days before
+def get_start_of_day_epoch(days_before=0):
+    now = datetime.datetime.now() - datetime.timedelta(days=days_before)
     start_of_day = datetime.datetime(now.year, now.month, now.day)
     return int(start_of_day.timestamp())
 
+# Function to get ranked match IDs
 def get_ranked_match_ids(puuid, api_key, start_time, end_time=None, total_matches=100):
     base_url = f"https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids"
     params = {"type": "ranked", "count": total_matches, "startTime": start_time}
@@ -52,14 +56,16 @@ if not is_hdfs_running():
     exit(1)
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-api_key = "RGAPI-847e8ec1-ff05-46fc-b51b-ce18b1e2a991"
+api_key = "RGAPI-50436409-20c0-46b9-bb54-a9807f50c626"
 hdfs_summoner_details_path = "/user/hadoop/lol/raw/summoner_details.json"
 hdfs_match_ids_directory = "/user/hadoop/lol/raw/match_ids"
 local_directory = os.path.join(script_dir, "../output")
 
-start_time = get_start_of_day_epoch()
-# Optional end_time can be set here if needed
-end_time = None
+# Use the modified function for dynamic start time
+days_before_start = 1  # How many days before today for startTime
+days_before_end = None  # Optionally, set this for endTime
+start_time = get_start_of_day_epoch(days_before_start)
+end_time = get_start_of_day_epoch(days_before_end) if days_before_end else None
 
 summoner_details = read_json_from_hdfs(hdfs_summoner_details_path)
 if not summoner_details:
@@ -77,4 +83,3 @@ for summoner_name, puuid in summoner_details.items():
         print(f"Updated Match IDs for {summoner_name} saved and uploaded to HDFS.")
 
 print("Script execution completed.")
-
