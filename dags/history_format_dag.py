@@ -1,4 +1,4 @@
-# test_pyspark_dag.py
+# history_format_dag.py
 
 from datetime import datetime, timedelta
 from airflow import DAG
@@ -13,14 +13,14 @@ default_args = {
     'retries': 0,
 }
 
-dag = DAG('test_pyspark_dag',
+dag = DAG('history_format_dag',
           default_args=default_args,
           description='A simple DAG to run PySpark script',
           schedule_interval=timedelta(days=1))
 
 t1 = BashOperator(
     task_id='run_pyspark',
-    bash_command='spark-submit /home/hadoop/Desktop/projectBD/spark/test_pyspark.py',
+    bash_command='spark-submit /home/hadoop/Desktop/projectBD/spark/history_format.py',
     dag=dag,
 )
 
