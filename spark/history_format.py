@@ -1,7 +1,7 @@
 import json
 import subprocess
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import explode, col
+from pyspark.sql.functions import explode, col, when
 import os
 
 # Define the paths with your Hadoop NameNode hostname and port
@@ -20,7 +20,11 @@ def load_summoner_details():
     return json.loads(result.stdout)
 
 # Create a Spark session
-spark = SparkSession.builder.appName("LoL Match Formatting").getOrCreate()
+spark = SparkSession.builder \
+    .appName("LoL Match Formatting") \
+    .config("spark.sql.debug.maxToStringFields", 1000) \
+    .getOrCreate()
+
 summoner_details = load_summoner_details()
 
 # Function to format and save data for a given summoner
@@ -68,13 +72,22 @@ def format_and_save_summoner_data(summoner_name, limit):
         formatted_data = summoner_df.select(
             "metadata.matchId",
             "info.gameDuration",
-            "info.gameMode",
             "participant.assists",
             "participant.championName",
-            "participant.damageDealtToObjectives",
             "participant.summonerName",
             "participant.deaths",
-            "participant.win"
+            "participant.lane",
+            "participant.totalDamageDealt",
+            "participant.kills",
+            "participant.totalDamageDealtToChampions",
+            "participant.totalMinionsKilled",
+            "participant.totalTimeSpentDead",
+            "participant.goldEarned",
+            "participant.doubleKills",
+            "participant.tripleKills",
+            "participant.quadraKills",
+            "participant.pentaKills",
+            when(col("participant.win") == True, "Win").otherwise("Defeat").alias("match_result")
         )
 
         # Save the formatted data to HDFS without overwriting

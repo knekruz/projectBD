@@ -122,7 +122,12 @@ pip uninstall apache-airflow
 ├── info.txt
 └── requirements.txt
 
-sudo systemctl start kibana
 sudo systemctl start elasticsearch
+sudo systemctl start kibana
+
 sudo systemctl stop elasticsearch
 sudo systemctl stop kibana
+
+
+test load:
+curl -X GET "localhost:9200/summoner_game_histories/_search?pretty"
