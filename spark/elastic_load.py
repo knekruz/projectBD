@@ -20,6 +20,10 @@ def load_and_write_summoner_data(summoner_name):
     print(f"Loading data for summoner: {summoner_name}")
 
     summoner_formatted_path = f"{formatted_data_path}/{summoner_name}"
+    summoner_processed_path = f"{formatted_data_path}/{summoner_name}/processed"
+
+    # Ensure processed directory exists
+    subprocess.run(["hdfs", "dfs", "-mkdir", "-p", summoner_processed_path])
 
     # List files in the formatted directory
     formatted_files_list_cmd = subprocess.Popen(["hdfs", "dfs", "-ls", f"{hdfs_base_path}{summoner_formatted_path}"], stdout=subprocess.PIPE)
@@ -42,6 +46,10 @@ def load_and_write_summoner_data(summoner_name):
 
 
         print(f"Data from {file_path} loaded to Elasticsearch.")
+        processed_file_path = f"{summoner_processed_path}/{os.path.basename(file_path)}"
+        subprocess.run(["hdfs", "dfs", "-mv", file_path, f"{hdfs_base_path}{processed_file_path}"])
+
+        print(f"Moved {file_path} to {processed_file_path}")
 
 # Process each summoner
 summoners_list_cmd = subprocess.Popen(["hdfs", "dfs", "-ls", f"{hdfs_base_path}{formatted_data_path}"], stdout=subprocess.PIPE)
