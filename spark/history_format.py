@@ -1,8 +1,8 @@
 import json
-import os
 import subprocess
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import explode, col
+import os
 
 # Define the paths with your Hadoop NameNode hostname and port
 hdfs_base_path = "hdfs://localhost:9000"  # HDFS base path
@@ -72,14 +72,13 @@ def format_and_save_summoner_data(summoner_name, limit):
             "participant.assists",
             "participant.championName",
             "participant.damageDealtToObjectives",
-            "participant.damageDealtToTurrets",
+            "participant.summonerName",
             "participant.deaths",
             "participant.win"
         )
 
-        # Save the formatted data to HDFS
-        formatted_file_name = os.path.basename(file_path).replace(".json", "")
-        formatted_data.write.mode("overwrite").json(f"{hdfs_base_path}{summoner_formatted_path}/{formatted_file_name}")
+        # Save the formatted data to HDFS without overwriting
+        formatted_data.write.mode("append").json(f"{hdfs_base_path}{summoner_formatted_path}")
 
         # Move the raw file to the archive
         subprocess.run(["hdfs", "dfs", "-mv", file_path, f"{hdfs_base_path}{summoner_archive_path}"])
