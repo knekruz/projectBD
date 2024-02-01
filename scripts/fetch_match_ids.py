@@ -56,7 +56,7 @@ if not is_hdfs_running():
     exit(1)
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-api_key = "RGAPI-50436409-20c0-46b9-bb54-a9807f50c626"
+api_key = "RGAPI-7e521220-2146-413d-bf80-2e5655cd5927"
 hdfs_summoner_details_path = "/user/hadoop/lol/raw/summoner_details.json"
 hdfs_match_ids_directory = "/user/hadoop/lol/raw/match_ids"
 local_directory = os.path.join(script_dir, "../output")

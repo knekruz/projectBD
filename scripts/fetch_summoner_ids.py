@@ -37,7 +37,7 @@ def write_results_to_file(file_name, data):
         json.dump(data, file, indent=4)
 
 
-api_key = "RGAPI-847e8ec1-ff05-46fc-b51b-ce18b1e2a991"
+api_key = "RGAPI-7e521220-2146-413d-bf80-2e5655cd5927"
 script_dir = os.path.dirname(os.path.abspath(__file__))
 summoner_names_file = os.path.join(script_dir, "../data/summoner_names.json")
 summoner_details_file = os.path.join(script_dir, "../output/summoner_details.json")

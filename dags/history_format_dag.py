@@ -1,27 +1,36 @@
-# history_format_dag.py
-
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.bash import BashOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 default_args = {
-    'owner': 'airflow',
+    'owner': 'hadoop',
     'depends_on_past': False,
-    'start_date': datetime(2024, 1, 30),
+    'start_date': datetime(2024, 1, 27),  # Adjust as needed
+    'email': ['irachide1@gmail.com'],
     'email_on_failure': False,
-    'email_on_retry': False,
     'retries': 0,
 }
 
-dag = DAG('history_format_dag',
-          default_args=default_args,
-          description='A simple DAG to run PySpark script',
-          schedule_interval=timedelta(days=1))
+dag = DAG(
+    'history_format_dag',
+    default_args=default_args,
+    description='DAG to format match histories',
+    schedule_interval=None,  # This DAG should be triggered by the previous DAG
+    catchup=False,
+)
 
-t1 = BashOperator(
-    task_id='run_pyspark',
-    bash_command='spark-submit /home/hadoop/Desktop/projectBD/spark/history_format.py',
+format_history_task = BashOperator(
+    task_id='format_history',
+    bash_command='python3 /home/hadoop/Desktop/projectBD/spark/history_format.py',
     dag=dag,
 )
 
-t1
+# Trigger for the next DAG
+trigger_elastic_load_dag = TriggerDagRunOperator(
+    task_id='trigger_elastic_load_dag',
+    trigger_dag_id='elastic_load_dag',  # Replace with your next DAG ID
+    dag=dag,
+)
+
+format_history_task >> trigger_elastic_load_dag

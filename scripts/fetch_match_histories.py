@@ -66,7 +66,7 @@ def save_match_history_to_hdfs(match_history, hdfs_path):
 if not is_hdfs_running():
     sys.exit(1)
 
-api_key = "RGAPI-847e8ec1-ff05-46fc-b51b-ce18b1e2a991"
+api_key = "RGAPI-7e521220-2146-413d-bf80-2e5655cd5927"
 hdfs_match_ids_directory = "/user/hadoop/lol/raw/match_ids"
 hdfs_match_histories_directory = "/user/hadoop/lol/raw/match_histories"
 

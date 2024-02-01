@@ -1,11 +1,12 @@
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.bash import BashOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 default_args = {
     'owner': 'hadoop',
     'depends_on_past': False,
-    'start_date': datetime(2024, 1, 27),  # Adjust as needed
+    'start_date': datetime(2024, 1, 27),
     'email': ['irachide1@gmail.com'],
     'email_on_failure': False,
     'retries': 0,
@@ -15,7 +16,8 @@ dag = DAG(
     'match_histories_dag',
     default_args=default_args,
     description='DAG to fetch match histories',
-    schedule_interval=None,  # This DAG should be triggered by the previous DAG
+    schedule_interval=None,
+    catchup=False,
 )
 
 fetch_match_histories_task = BashOperator(
@@ -24,4 +26,10 @@ fetch_match_histories_task = BashOperator(
     dag=dag,
 )
 
-fetch_match_histories_task
+trigger_history_format_dag = TriggerDagRunOperator(
+    task_id='trigger_history_format_dag',
+    trigger_dag_id='history_format_dag',
+    dag=dag,
+)
+
+fetch_match_histories_task >> trigger_history_format_dag
